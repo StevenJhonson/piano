@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+</head>
+<style>
+    
+    body {
+        background-color: black;
+    }
+    .header .row {
+        display: flex;
+        margin-top: 100px;
+        margin-left: 200px;
+    }
+    .header .row .col1 {
+        display: flex;
+    }
+    .header .row .col1 .box1 {
+        width: 30px;
+        height: 200px;
+        background-color: white;
+        display: flex;
+    }
+    .header .row .col1 .box1:nth-child(2) {
+        background-color: black;
+        height: 100px;
+    }
+    .header .row .col1 .box1:nth-child(4) {
+        background-color: black;
+        height: 100px;
+    }
+    .header .row .col1 .box1:nth-child(2) .box-1 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .header .row .col1 .box1:nth-child(2) .box-2 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 2px;
+    }
+    .header .row .col1 .box1:nth-child(4) .box-1 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .header .row .col1 .box1:nth-child(4) .box-2 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 2px;
+    }
+    .header .row .col1 .box1:nth-child(3) {
+        width: 15px;
+    }
+    .header .row .col1 .box1:nth-child(5) {
+        margin-right: 2px;
+    }
+/* box2 uchun style */
+    .header .row .col2 {
+        display: flex;
+    }
+    .header .row .col2 .box2 {
+        width: 30px;
+        height: 200px;
+        background-color: white;
+        display: flex;
+    }
+    .header .row .col2 .box2:nth-child(2) {
+        background-color: black;
+        height: 100px;
+    }
+    .header .row .col2 .box2:nth-child(4) {
+        background-color: black;
+        height: 100px;
+    }
+    .header .row .col2 .box2:nth-child(2) .box-1 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .header .row .col2 .box2:nth-child(2) .box-2 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 2px;
+    }
+    .header .row .col2 .box2:nth-child(4) .box-1 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .header .row .col2 .box2:nth-child(4) .box-2 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 2px;
+    }
+    .header .row .col2 .box2:nth-child(3) {
+        width: 15px;
+    }
+    .header .row .col2 .box2:nth-child(6) {
+        background-color: black;
+        height: 100px;
+    }
+    .header .row .col2 .box2:nth-child(6) .box-1 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .header .row .col2 .box2:nth-child(6) .box-2 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 2px;
+    }
+    .header .row .col2 .box2:nth-child(5) {
+        width: 15px;
+    }
+    .header .row .col2 .box2:nth-child(7){
+        margin-right: 2px;
+    }
+    /* box3 uchun style    */
+    .header .row .col3 {
+        display: flex;
+    }
+    .header .row .col3 .box3 {
+        width: 30px;
+        height: 200px;
+        background-color: white;
+        display: flex;
+    }
+    .header .row .col3 .box3:nth-child(2) {
+        background-color: black;
+        height: 100px;
+    }
+    .header .row .col3 .box3:nth-child(4) {
+        background-color: black;
+        height: 100px;
+    }
+    .header .row .col3 .box3:nth-child(2) .box-1 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .header .row .col3 .box3:nth-child(2) .box-2 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 2px;
+    }
+    .header .row .col3 .box3:nth-child(4) .box-1 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .header .row .col3 .box3:nth-child(4) .box-2 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 2px;
+    }
+    .header .row .col3 .box3:nth-child(3) {
+        width: 15px;
+    }
+    .header .row .col3 .box3:nth-child(5) {
+        margin-right: 2px;
+    }
+    .header .row .col3 .box3:nth-child(5) {
+        margin-right: 2px;
+    }
+    /* box4 uchun style */
+    .header .row .col4 {
+        display: flex;
+    }
+    .header .row .col4 .box4 {
+        width: 30px;
+        height: 200px;
+        background-color: white;
+        display: flex;
+    }
+    .header .row .col4 .box4:nth-child(2) {
+        background-color: black;
+        height: 100px;
+    }
+    .header .row .col4 .box4:nth-child(4) {
+        background-color: black;
+        height: 100px;
+    }
+    .header .row .col4 .box4:nth-child(2) .box-1 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .header .row .col4 .box4:nth-child(2) .box-2 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 2px;
+    }
+    .header .row .col4 .box4:nth-child(4) .box-1 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .header .row .col4 .box4:nth-child(4) .box-2 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 2px;
+    }
+    .header .row .col4 .box4:nth-child(3) {
+        width: 15px;
+    }
+    .header .row .col4 .box4:nth-child(6) {
+        background-color: black;
+        height: 100px;
+    }
+    .header .row .col4 .box4:nth-child(6) .box-1 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .header .row .col4 .box4:nth-child(6) .box-2 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 2px;
+    }
+    .header .row .col4 .box4:nth-child(5) {
+        width: 15px;
+    }
+    .header .row .col4 .box4:nth-child(7){
+        margin-right: 2px;
+    }
+    /* box5 uchun style */
+    .header .row .col5 {
+        display: flex;
+    }
+    .header .row .col5 .box5 {
+        width: 30px;
+        height: 200px;
+        background-color: white;
+        display: flex;
+    }
+    .header .row .col5 .box5:nth-child(2) {
+        background-color: black;
+        height: 100px;
+    }
+    .header .row .col5 .box5:nth-child(4) {
+        background-color: black;
+        height: 100px;
+    }
+    .header .row .col5 .box5:nth-child(2) .box-1 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .header .row .col5 .box5:nth-child(2) .box-2 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 2px;
+    }
+    .header .row .col5 .box5:nth-child(4) .box-1 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .header .row .col5 .box5:nth-child(4) .box-2 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 2px;
+    }
+    .header .row .col5 .box5:nth-child(3) {
+        width: 15px;
+    }
+    .header .row .col5 .box5:nth-child(5) {
+        margin-right: 2px;
+    }
+    .header .row .col5 .box5:nth-child(5) {
+        margin-right: 2px;
+    }
+    /* box6 uchun style */
+    .header .row .col3 {
+        display: flex;
+    }
+    .header .row .col3 .box3 {
+        width: 30px;
+        height: 200px;
+        background-color: white;
+        display: flex;
+    }
+    .header .row .col3 .box3:nth-child(2) {
+        background-color: black;
+        height: 100px;
+    }
+    .header .row .col3 .box3:nth-child(4) {
+        background-color: black;
+        height: 100px;
+    }
+    .header .row .col3 .box3:nth-child(2) .box-1 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .header .row .col3 .box3:nth-child(2) .box-2 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 2px;
+    }
+    .header .row .col3 .box3:nth-child(4) .box-1 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .header .row .col3 .box3:nth-child(4) .box-2 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 2px;
+    }
+    .header .row .col3 .box3:nth-child(3) {
+        width: 15px;
+    }
+    .header .row .col3 .box3:nth-child(5) {
+        margin-right: 2px;
+    }
+    .header .row .col3 .box3:nth-child(5) {
+        margin-right: 2px;
+    }
+    /* box4 uchun style */
+    .header .row .col6 {
+        display: flex;
+    }
+    .header .row .col6 .box6 {
+        width: 30px;
+        height: 200px;
+        background-color: white;
+        display: flex;
+    }
+    .header .row .col6 .box6:nth-child(2) {
+        background-color: black;
+        height: 100px;
+    }
+    .header .row .col6 .box6:nth-child(4) {
+        background-color: black;
+        height: 100px;
+    }
+    .header .row .col6 .box6:nth-child(2) .box-1 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .header .row .col6 .box6:nth-child(2) .box-2 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 2px;
+    }
+    .header .row .col6 .box6:nth-child(4) .box-1 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .header .row .col6 .box6:nth-child(4) .box-2 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 2px;
+    }
+    .header .row .col6 .box6:nth-child(3) {
+        width: 15px;
+    }
+    .header .row .col6 .box6:nth-child(6) {
+        background-color: black;
+        height: 100px;
+    }
+    .header .row .col6 .box6:nth-child(6) .box-1 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+    }
+    .header .row .col6 .box6:nth-child(6) .box-2 {
+        background-color: white;
+        width: 15px;
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 2px;
+    }
+    .header .row .col6 .box6:nth-child(5) {
+        width: 15px;
+    }
+    .header .row .col6 .box6:nth-child(7){
+        margin-right: 2px;
+    }
+</style>
+<body>
+    <div class="header">
+        <div class="row">
+            <div class="col1">
+                <div class="box1"></div>
+                <div class="box1">
+                    <div class="box-1"></div>
+                    <div class="box-2"></div>
+                </div>
+                <div class="box1"></div>
+                <div class="box1">
+                    <div class="box-1"></div>
+                    <div class="box-2"></div>   
+                </div>
+                <div class="box1"></div>
+            </div>
+            <div class="col2">
+                <div class="box2"></div>
+                <div class="box2">
+                    <div class="box-1"></div>
+                    <div class="box-2"></div>
+                </div>
+                <div class="box2"></div>
+                <div class="box2">
+                    <div class="box-1"></div>
+                    <div class="box-2"></div>
+                </div>
+                <div class="box2"></div>
+                <div class="box2">
+                    <div class="box-1"></div>
+                    <div class="box-2"></div>
+                </div>
+                <div class="box2"></div>
+            </div>
+            <div class="col3">
+                <div class="box3"></div>
+                <div class="box3">
+                    <div class="box-1"></div>
+                    <div class="box-2"></div>
+                </div>
+                <div class="box3"></div>
+                <div class="box3">
+                    <div class="box-1"></div>
+                    <div class="box-2"></div>
+                </div>
+                <div class="box3"></div>
+            </div>
+            <div class="col4">
+                <div class="box4"></div>
+                <div class="box4">
+                    <div class="box-1"></div>
+                    <div class="box-2"></div>
+                </div>
+                <div class="box4"></div>
+                <div class="box4">
+                    <div class="box-1"></div>
+                    <div class="box-2"></div>
+                </div>
+                <div class="box4"></div>
+                <div class="box4">
+                    <div class="box-1"></div>
+                    <div class="box-2"></div>
+                </div>
+                <div class="box4"></div>
+            </div>
+            <div class="col5">
+                <div class="box5"></div>
+                <div class="box5">
+                    <div class="box-1"></div>
+                    <div class="box-2"></div>
+                </div>
+                <div class="box5"></div>
+                <div class="box5">
+                    <div class="box-1"></div>
+                    <div class="box-2"></div>
+                </div>
+                <div class="box5"></div>
+            </div>
+            <div class="col6">
+                <div class="box6"></div>
+                <div class="box6">
+                    <div class="box-1"></div>
+                    <div class="box-2"></div>  
+                </div>
+                <div class="box6"></div>
+                <div class="box6">
+                    <div class="box-1"></div>
+                    <div class="box-2"></div>
+                </div>
+                <div class="box6"></div>
+                <div class="box6">
+                    <div class="box-1"></div>
+                    <div class="box-2"></div>
+                </div>
+                <div class="box6"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
